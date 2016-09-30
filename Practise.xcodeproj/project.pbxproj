@@ -97,6 +97,7 @@
 					061067431D9D7A85003F0CE4 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = B9F42LDLFJ;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};

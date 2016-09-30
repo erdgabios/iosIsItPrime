@@ -1,26 +1,83 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Practise" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IS IT PRIME?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0pd-as-ZX8">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="NIP-nL-b3J"/>
+                                    <constraint firstAttribute="width" constant="184" id="obK-BC-tAf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter a positive whole number ..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Gc-LA-qjy">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4bu-OK-pcY"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okq-9U-Jw9">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="WZw-PU-KOw"/>
+                                    <constraint firstAttribute="width" constant="129" id="gcY-gP-xfW"/>
+                                </constraints>
+                                <state key="normal" title="IS IT PRIME?"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eLy-Z9-zdt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IT IS PRIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVJ-oe-Ibj">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="N25-I9-AEF"/>
+                                    <constraint firstAttribute="width" constant="374" id="WES-4S-F8L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kVJ-oe-Ibj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Gr-2i-MUm"/>
+                            <constraint firstItem="7Gc-LA-qjy" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="1Is-ys-dFd"/>
+                            <constraint firstItem="okq-9U-Jw9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DiX-v2-CBT"/>
+                            <constraint firstItem="0pd-as-ZX8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="33" id="Fjn-qg-gQf"/>
+                            <constraint firstItem="kVJ-oe-Ibj" firstAttribute="top" secondItem="okq-9U-Jw9" secondAttribute="bottom" constant="27" id="KqV-It-mEA"/>
+                            <constraint firstItem="7Gc-LA-qjy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XCA-Yt-CKK"/>
+                            <constraint firstItem="okq-9U-Jw9" firstAttribute="top" secondItem="7Gc-LA-qjy" secondAttribute="bottom" constant="30" id="lza-uU-r6l"/>
+                            <constraint firstItem="7Gc-LA-qjy" firstAttribute="top" secondItem="0pd-as-ZX8" secondAttribute="bottom" constant="30" id="mgH-z1-fxy"/>
+                            <constraint firstItem="7Gc-LA-qjy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="zR3-6r-CeP"/>
+                            <constraint firstItem="0pd-as-ZX8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zcU-yB-VOk"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="enterNumber" destination="7Gc-LA-qjy" id="IOX-a8-8VM"/>
+                        <outlet property="result" destination="kVJ-oe-Ibj" id="gS3-V6-Mo1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="130.43478260869566"/>
         </scene>
     </scenes>
 </document>
